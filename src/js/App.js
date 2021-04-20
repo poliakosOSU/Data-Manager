@@ -1,6 +1,7 @@
 import React from 'react';
-import MenuBar from './components/menuBar';
-import DenseAppBar from './components/denseAppBar';
+import DataSets from './components/DataSets';
+import MenuBar from './components/MenuBar';
+import DenseAppBar from './components/DenseAppBar';
 import MediaCard from './components/MediaCard';
 import NewMediaCard from './components/NewMediaCard';
 // import { DataGrid } from '@material-ui/data-grid'; possibly use in another window
@@ -14,19 +15,18 @@ import NewMediaCard from './components/NewMediaCard';
 
 function App() {
 
-    const dataCards = [];
+    // const dataCards = [];
 
-    for(var i = 0; i < 2; i++){
+    // for(var i = 0; i < 2; i++){
 
-        dataCards.push(<MediaCard />);
-    };
-
+    //     dataCards.push(<MediaCard />);
+    // };
     return (
         <div>
         {/* <DenseAppBar /> */}
-        {dataCards}
-        <NewMediaCard />
-
+        {/* {dataCards}
+        <NewMediaCard /> */}
+          <DataSets />
         </div>
         // <div>
         // <h1>React Component</h1>
@@ -34,7 +34,7 @@ function App() {
         //     electron.notificationApi.sendNotification("My custom notification!")
         //     }}>Notify</button>
         // </div>
-    )
+    ) 
 }
 
 export default App;
