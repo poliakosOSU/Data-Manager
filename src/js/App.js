@@ -1,4 +1,5 @@
 import React from 'react';
+import Views from './components/Views';
 import DataSets from './components/DataSets';
 import MenuBar from './components/MenuBar';
 import DenseAppBar from './components/DenseAppBar';
@@ -23,10 +24,11 @@ function App() {
     // };
     return (
         <div>
+        <Views />
         {/* <DenseAppBar /> */}
         {/* {dataCards}
         <NewMediaCard /> */}
-          <DataSets />
+          {/* <DataSets /> */}
         </div>
         // <div>
         // <h1>React Component</h1>
