@@ -11,7 +11,7 @@ export class Views extends React.Component {
             currentDataSet: "NULL"
         }
         this.changeCurrentView = this.changeCurrentView.bind(this);
-				this.update = this.update.bind(this);
+		this.update = this.update.bind(this);
     }
 
     changeCurrentView(view) {
@@ -26,8 +26,12 @@ export class Views extends React.Component {
         if(this.state.currentView === "DataSetSelection"){
 					console.log("Option 1 Accessed")
 					return(<DataSets updateParentState={this.update}/>)
-        } if(this.state.currentView === "DataSetTypeSelection"){
+        } else if(this.state.currentView === "DataSetTypeSelection"){
 					return(<SelectDataSetType updateParentState={this.update}/>)
+        } else if(this.state.currentView === "CreateStandardTable") {
+
+        } else if(this.state.currentView === "CreateCollapsibleTable") {
+            
         }
     }
 
